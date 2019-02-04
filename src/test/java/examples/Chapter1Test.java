@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.*;
 public class Chapter1Test {
 
     @Test
-    public void requestUSZipCode90210_CheckPlaceNameInResponseBody_ShouldEqualBeverlyHills() {
+    public void requestUsZipCode90210_checkPlaceNameInResponseBody_expectBeverlyHills() {
 
         given().
         when().
