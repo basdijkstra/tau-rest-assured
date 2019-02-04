@@ -31,6 +31,17 @@ public class Chapter2Test {
     }
 
     @Test
+    public void requestUsZipCode90210_logRequestAndResponseDetails() {
+
+        given().
+            log().all().
+        when().
+            get("http://zippopotam.us/us/90210").
+        then().
+            log().body();
+    }
+
+    @Test
     public void requestUsZipCode90210_checkPlaceNameInResponseBody_expectBeverlyHills() {
 
         given().
