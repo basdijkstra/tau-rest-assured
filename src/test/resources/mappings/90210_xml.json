@@ -1,0 +1,11 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/us/90210"
+    },
+    "response": {
+        "status": 200,
+		"headers": { "Content-Type": "application/xml" },
+        "bodyFileName": "90210.xml"
+    }
+}

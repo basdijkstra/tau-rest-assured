@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<response>
+	<postcode>90210</postcode>
+	<country>United States</country>
+	<countryAbbreviation>US</countryAbbreviation>
+	<places>
+		<place longitude="-118.4065" latitude="34.0901">
+			<placeName>Beverly Hills</placeName>
+			<state>California</state>
+			<stateAbbreviation>CA</stateAbbreviation>
+		</place>
+	</places>
+</response>
