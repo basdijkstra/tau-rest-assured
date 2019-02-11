@@ -1,7 +1,6 @@
 package dataentities;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.*;
 
 @JsonPropertyOrder({"placeName", "longitude", "state", "stateAbbreviation", "latitude"})
 public class Place {

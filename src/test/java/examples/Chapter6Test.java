@@ -30,6 +30,7 @@ public class Chapter6Test {
     public void sendLvZipCode1050_checkStatusCode_expect200() {
 
         Location location = new Location();
+        location.setCountry("Netherlands");
 
         given().
             contentType(ContentType.JSON).
