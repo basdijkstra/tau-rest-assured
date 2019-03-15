@@ -1,8 +1,5 @@
 package examples;
 
-import com.tngtech.java.junit.dataprovider.DataProvider;
-import com.tngtech.java.junit.dataprovider.DataProviderRunner;
-import com.tngtech.java.junit.dataprovider.UseDataProvider;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
@@ -11,10 +8,6 @@ import io.restassured.specification.ResponseSpecification;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.Request;
-import org.junit.runner.RunWith;
-
-import javax.xml.ws.Response;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -79,8 +72,8 @@ public class Chapter4Test {
             get("http://zippopotam.us/us/90210").
         then().
             extract().
-            path("places[0].'Beverly Hills'");
+            path("places[0].'place name'");
 
-        Assert.assertEquals(placeName, "Beverly Hills");
+        Assert.assertEquals("Beverly Hills", placeName);
     }
 }
