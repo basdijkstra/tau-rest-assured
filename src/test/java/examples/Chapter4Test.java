@@ -79,7 +79,7 @@ public class Chapter4Test {
             get("http://zippopotam.us/us/90210").
         then().
             extract().
-            path("places[0].'Beverly Hills'");
+            path("places[0].'place name'");
 
         Assert.assertEquals(placeName, "Beverly Hills");
     }
