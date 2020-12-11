@@ -1,3 +1,4 @@
+//when response is xml file
 package examples;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
